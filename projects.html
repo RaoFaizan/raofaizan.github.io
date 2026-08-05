@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects — Rao Faizan</title>
+<meta name="description" content="Research projects by Rao Faizan: healthcare language models, AI energy management, and person re-identification.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">Rao Faizan</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="publications.html">Publications</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="experience.html">Experience</a>
+      <a href="assets/Rao_Faizan_CV.pdf">CV</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap page-head">
+  <h1>Projects</h1>
+  <p>Funded research projects and thesis work, with the problem each one addresses and my role in it.</p>
+</div>
+
+<main class="wrap">
+
+  <section>
+    <div class="entry">
+      <div class="entry-head">
+        <h3>Lightweight Language Model for Healthcare</h3>
+        <span class="entry-date">2024 – Present</span>
+      </div>
+      <p class="entry-org">Kyung Hee University · Korean government-funded</p>
+      <ul>
+        <li><strong>Problem.</strong> Clinical language models capable enough to support diagnosis are
+            too large to deploy affordably, and their outputs cannot be taken on trust in a medical
+            setting.</li>
+        <li><strong>Approach.</strong> A neuro-symbolic small language model covering health literacy,
+            disease detection, treatment recommendation and medical report generation — paired with a
+            proof reasoner that verifies generated claims against a symbolic knowledge base.</li>
+        <li><strong>My role.</strong> Owner of the model-efficiency workstream (quantization, knowledge
+            distillation, structured pruning) and the vision–language pipeline over the MIMIC chest
+            X-ray corpus.</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">PyTorch</span><span class="tag">Hugging Face</span>
+        <span class="tag">Quantization</span><span class="tag">Distillation</span>
+        <span class="tag">Pruning</span><span class="tag">Vision–Language</span>
+        <span class="tag">MIMIC</span>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3>AI-Based Energy Management Solution — Japan Market</h3>
+        <span class="entry-date">2024 – Present</span>
+      </div>
+      <p class="entry-org">Kyung Hee University · Industry-funded</p>
+      <ul>
+        <li><strong>Problem.</strong> Grid operators need household and facility demand to flex in
+            response to supply conditions and price signals, without users having to think about it.</li>
+        <li><strong>Approach.</strong> A platform spanning grid automation, automated demand response,
+            distributed energy resource integration, balance group formation and flexible pricing.</li>
+        <li><strong>My role.</strong> Built the Self Demand Response (SDR) component — dataset
+            unification across heterogeneous consumption sources, LSTM forecasting models driving the
+            SDR policy, and the battery-storage scheduling algorithm.</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">Python</span><span class="tag">LSTM</span>
+        <span class="tag">Keras</span><span class="tag">PyTorch</span>
+        <span class="tag">Time-series forecasting</span><span class="tag">Scheduling</span>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3>IAB-Net — Informative &amp; Attention-Based Person Re-Identification</h3>
+        <span class="entry-date">2020 – 2021</span>
+      </div>
+      <p class="entry-org">M.S. thesis · Machine Vision &amp; Intelligent Systems Lab, NUST</p>
+      <ul>
+        <li><strong>Problem.</strong> Matching the same person across non-overlapping surveillance
+            cameras breaks down under viewpoint, illumination and background variation.</li>
+        <li><strong>Approach.</strong> An attention module that suppresses background clutter and
+            emphasises discriminative body regions, improving matching robustness across cameras.</li>
+        <li><strong>Outcome.</strong> Published and presented at ICoDT2 2021 (IEEE). Owned the full
+            cycle: dataset curation, model design, ablation studies and write-up.</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">PyTorch</span><span class="tag">Attention</span>
+        <span class="tag">Re-identification</span><span class="tag">Computer Vision</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Rao Faizan</span>
+    <span>Kyung Hee University · Gyeonggi-do, South Korea</span>
+  </div>
+</footer>
+
+</body>
+</html>
