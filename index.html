@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Rao Faizan — AI Researcher</title>
-<meta name="description" content="Rao Faizan — Ph.D. candidate at Kyung Hee University working on multi-agent LLM systems, efficient language models, and vision-language modeling for healthcare.">
+<meta name="description" content="Rao Faizan — doctoral researcher at Kyung Hee University building multi-agent (agentic) AI for cardiovascular care: clinical knowledge graphs, hybrid retrieval, agent safety and alignment, and model compression for hospital deployment.">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -27,12 +27,13 @@
     <img src="assets/profile.png" alt="Portrait of Rao Faizan">
     <div>
       <h1>Rao Faizan</h1>
-      <p class="role">Ph.D. Candidate in Artificial Intelligence · Kyung Hee University, South Korea</p>
+      <p class="role">Doctoral Researcher in Artificial Intelligence · Kyung Hee University, South Korea</p>
       <p class="bio">
-        I build language and vision models that have to work under real constraints — limited compute,
-        clinical accuracy requirements, and outputs that need to be verifiable. My doctoral research
-        covers multi-agent LLM systems for cardiovascular diagnostics, model compression for healthcare
-        deployment, and vision–language modeling on clinical imaging.
+        I build multi-agent (agentic) AI systems for cardiovascular care. That means constructing
+        clinical knowledge graphs straight from raw registry data, reasoning over them with hybrid
+        retrieval, and building the context-management, safety and alignment layers that decide whether
+        an agent system can be trusted near a patient. A parallel track shrinks clinical language models
+        far enough to run inference inside a hospital.
       </p>
       <div class="links">
         <a class="primary" href="assets/Rao_Faizan_CV.pdf">Download CV (PDF)</a>
@@ -56,14 +57,25 @@
     </p>
     <div class="cards">
       <div class="card">
-        <h3>Multi-agent LLM systems</h3>
-        <p>Orchestrating specialised agents for clinical diagnostics — task decomposition, tool use,
-           and coordination between reasoning and retrieval components.</p>
+        <h3>Agentic systems for healthcare</h3>
+        <p>Multi-agent systems for cardiovascular diagnosis and patient health literacy — task
+           decomposition, tool and MCP interfaces, and coordination between reasoning and retrieval
+           agents.</p>
       </div>
       <div class="card">
-        <h3>Efficient language models</h3>
-        <p>Quantization, knowledge distillation and structured pruning to cut inference cost while
-           holding diagnostic accuracy.</p>
+        <h3>Clinical knowledge graphs</h3>
+        <p>Building knowledge graphs directly from raw registry data — the KorHF-III heart-failure
+           registry became a 7,439-node, 114,505-edge graph — and querying them with HybridRAG.</p>
+      </div>
+      <div class="card">
+        <h3>Context, safety and alignment</h3>
+        <p>Inter-agent context management, scope limits on clinical claims, and a proof reasoner that
+           verifies generated statements against a symbolic knowledge base before a user sees them.</p>
+      </div>
+      <div class="card">
+        <h3>Shrinking models for deployment</h3>
+        <p>Quantization, knowledge distillation and structured pruning so clinical models fit
+           hospital-side inference hardware without losing diagnostic accuracy.</p>
       </div>
       <div class="card">
         <h3>Vision–language modeling</h3>
@@ -71,19 +83,9 @@
            such as MIMIC.</p>
       </div>
       <div class="card">
-        <h3>Neuro-symbolic verification</h3>
-        <p>Proof-reasoner components that check LLM-generated claims against a symbolic knowledge
-           base to reduce unsupported output.</p>
-      </div>
-      <div class="card">
-        <h3>Visual surveillance</h3>
-        <p>Person and vehicle re-identification across non-overlapping cameras; attention mechanisms
-           for discriminative feature learning.</p>
-      </div>
-      <div class="card">
         <h3>Intelligent energy systems</h3>
-        <p>LSTM-driven demand forecasting and battery-storage scheduling for automated demand
-           response.</p>
+        <p>HybridRAG over open energy datasets, plus LSTM demand forecasting and battery-storage
+           scheduling for self demand response.</p>
       </div>
     </div>
   </section>
@@ -95,22 +97,30 @@
         <span class="lbl">Ph.D. CGPA — 99.33 percentile</span></div>
       <div class="stat"><span class="num">Presidential</span>
         <span class="lbl">Scholarship, Kyung Hee University</span></div>
-      <div class="stat"><span class="num">5</span>
-        <span class="lbl">Peer-reviewed publications</span></div>
-      <div class="stat"><span class="num">5 yrs</span>
-        <span class="lbl">Research &amp; university teaching</span></div>
+      <div class="stat"><span class="num">7</span>
+        <span class="lbl">Peer-reviewed papers — 2 in press</span></div>
+      <div class="stat"><span class="num">ESC 2026</span>
+        <span class="lbl">Abstract accepted, ESC Congress, Munich</span></div>
     </div>
   </section>
 
   <section>
     <h2>Currently</h2>
     <ul class="plain">
-      <li><strong>Multi-agent diagnostics.</strong> Building an agent system for cardiovascular disease
-          diagnosis and patient health literacy under a Korean government-funded programme.</li>
-      <li><strong>Lightweight healthcare LLMs.</strong> Compressing clinical language models for
-          practical inference without losing diagnostic reliability.</li>
-      <li><strong>Energy management for the Japan market.</strong> Self Demand Response component —
-          forecasting, scheduling, and price-signal response.</li>
+      <li><strong>Multi-agent cardiovascular diagnostics.</strong> Leading the agent workstream of
+          <em>Explainable Logical Reasoning for Medical Knowledge Generation</em>, funded by IITP under
+          the Korean Ministry of Science and ICT.</li>
+      <li><strong>Knowledge graphs from raw clinical data.</strong> KorHF-III heart-failure registry
+          and a clinician-curated chest-pain knowledge base, served through HybridRAG over a graph
+          database with an MCP tool interface.</li>
+      <li><strong>Context management, safety and alignment.</strong> The layer that keeps a multi-agent
+          clinical system inside its evidence — the part that decides whether any of this is
+          deployable.</li>
+      <li><strong>Shrinking models for hospital inference.</strong> Including BANQ, a budget-aware
+          nested quantization scheme that serves one low-bit checkpoint across several memory
+          budgets.</li>
+      <li><strong>Data-driven energy operations.</strong> HybridRAG over NREL open energy datasets and
+          the Self Demand Response component, under the MSIT ITRC programme (DESIRe Center).</li>
     </ul>
   </section>
 

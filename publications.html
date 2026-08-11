@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Publications — Rao Faizan</title>
-<meta name="description" content="Peer-reviewed publications by Rao Faizan on medical VQA, retrieval-augmented clinical diagnosis, knowledge graphs, biomarker segmentation and person re-identification.">
+<meta name="description" content="Peer-reviewed publications by Rao Faizan on medical multi-agent systems, retrieval-augmented clinical diagnosis, knowledge graphs, medical VQA, biomarker segmentation and person re-identification.">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -24,7 +24,8 @@
 
 <div class="wrap page-head">
   <h1>Publications</h1>
-  <p>Five peer-reviewed papers, one under review · 16 citations · h-index 2 —
+  <p>Seven peer-reviewed papers (two accepted, awaiting publication) and one accepted conference
+     abstract · 16 citations · h-index 2 —
      <a href="https://scholar.google.com/citations?user=-F30Si8AAAAJ">Google Scholar</a> ·
      <a href="https://orcid.org/0000-0003-4084-5166">ORCID</a></p>
 </div>
@@ -32,7 +33,7 @@
 <main class="wrap">
 
   <section>
-    <h2>Journal</h2>
+    <h2>Journal articles</h2>
     <div class="pub">
       <span class="title">Unified link prediction modeling for enhanced knowledge graph completion task
         <span class="badge">SCIE</span></span>
@@ -43,7 +44,25 @@
   </section>
 
   <section>
-    <h2>Conference</h2>
+    <h2>Conference papers</h2>
+
+    <div class="pub">
+      <span class="title">Automating Medical Multi-Agent Workflows from Natural Language Using LLMs
+        <span class="badge">Accepted</span></span>
+      <span class="authors">C. Bold, <span class="me">R. Faizan</span>, S. Lee, S. T. Kim</span>
+      <span class="venue">Proc. Korea Computer Congress (KCC 2026), Korean Institute of Information
+        Scientists and Engineers, Jeju, Korea, June 2026 — accepted, awaiting publication</span>
+    </div>
+
+    <div class="pub">
+      <span class="title">Hybrid Retrieval-Augmented Generation for Chest-Pain Differential Diagnosis:
+        Recall Gains and Calibration Costs <span class="badge">Accepted</span></span>
+      <span class="authors">C. Bold, <span class="me">R. Faizan</span>, CH. Hua, S. M. Kang, S. Lee,
+        S. T. Kim</span>
+      <span class="venue">Evaluates three retrieval variants on a new benchmark of 165 PubMed Central
+        case vignettes: hybrid retrieval raises recall in-distribution but over-commits to familiar
+        diagnoses out-of-distribution. 2026 — accepted, awaiting publication</span>
+    </div>
 
     <div class="pub">
       <span class="title">ChestVQATrans: A Transformer-Based Approach for Medical VQA in Radiology
@@ -85,23 +104,59 @@
   </section>
 
   <section>
-    <h2>Under review</h2>
+    <h2>Conference abstracts</h2>
 
     <div class="pub">
-      <span class="title">Hybrid Retrieval-Augmented Generation for Chest-Pain Differential Diagnosis:
-        Recall Gains and Calibration Costs</span>
-      <span class="authors">C. Bold, <span class="me">R. Faizan</span>, CH. Hua, S. M. Kang, S. Lee,
-        S. T. Kim</span>
-      <span class="venue">Evaluates three retrieval variants on a new benchmark of 165 PubMed Central
-        case vignettes: hybrid retrieval raises recall in-distribution but over-commits to familiar
-        diagnoses out-of-distribution. 2025</span>
+      <span class="title">Longitudinal Trajectories of Guideline-Directed Medical Therapy and 12-Month
+        Mortality in Acute Heart Failure: Insights from the KorHF-III Registry
+        <span class="badge">Accepted</span></span>
+      <span class="authors">D. J. Choi, <span class="me">R. Faizan</span>, C. Bold, S. Y. Lee,
+        J. H. Kim, S. Jung, S. M. Kang, B. S. Yoo, H. J. Cho, J. C. Youn, J. J. Park, M. Yoon</span>
+      <span class="venue">ESC Congress 2026, European Society of Cardiology, Munich, August 2026
+        (abstract no. 87857) — a knowledge graph built from 7,351 acute heart-failure patients across
+        47 Korean centres, used to show that de-escalating guideline-directed medical therapy is
+        independently associated with higher 12-month mortality. Work with cardiology departments at
+        five Korean university hospitals.</span>
     </div>
   </section>
 
   <section>
     <h2>BibTeX</h2>
-    <p class="section-lede">Copy-ready entries for the peer-reviewed papers.</p>
-<pre class="bibtex">@inproceedings{faizan2025chestvqatrans,
+    <p class="section-lede">Copy-ready entries for the peer-reviewed papers and the ESC abstract.</p>
+<pre class="bibtex">@inproceedings{bold2026kcc,
+  author    = {Bold, Chinguun and Faizan, Rao and Lee, Sungyoung and Kim, Seong Tae},
+  title     = {Automating Medical Multi-Agent Workflows from Natural Language Using {LLMs}},
+  booktitle = {Proceedings of the Korea Computer Congress (KCC 2026)},
+  address   = {Jeju, Korea},
+  month     = jun,
+  year      = {2026},
+  publisher = {Korean Institute of Information Scientists and Engineers},
+  note      = {Accepted}
+}
+
+@inproceedings{bold2026hybridrag,
+  author    = {Bold, Chinguun and Faizan, Rao and Hua, C.-H. and Kang, S. M. and
+               Lee, Sungyoung and Kim, Seong Tae},
+  title     = {Hybrid Retrieval-Augmented Generation for Chest-Pain Differential Diagnosis:
+               Recall Gains and Calibration Costs},
+  year      = {2026},
+  note      = {Accepted}
+}
+
+@inproceedings{choi2026esc,
+  author    = {Choi, D. J. and Faizan, Rao and Bold, C. and Lee, S. Y. and
+               Kim, J. H. and Jung, S. and Kang, S. M. and Yoo, B. S. and
+               Cho, H. J. and Youn, J. C. and Park, J. J. and Yoon, M.},
+  title     = {Longitudinal Trajectories of Guideline-Directed Medical Therapy and 12-Month
+               Mortality in Acute Heart Failure: Insights from the {KorHF-III} Registry},
+  booktitle = {ESC Congress 2026, European Society of Cardiology},
+  address   = {Munich, Germany},
+  month     = aug,
+  year      = {2026},
+  note      = {Accepted abstract no. 87857}
+}
+
+@inproceedings{faizan2025chestvqatrans,
   author    = {Faizan, Rao and Lee, Sungyoung and Kim, Seong Tae},
   title     = {{ChestVQATrans}: A Transformer-Based Approach for Medical {VQA} in Radiology},
   booktitle = {Proceedings of the 2025 8th Artificial Intelligence and Cloud

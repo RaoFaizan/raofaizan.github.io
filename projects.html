@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Projects — Rao Faizan</title>
-<meta name="description" content="Research projects by Rao Faizan: healthcare language models, AI energy management, and person re-identification.">
+<meta name="description" content="Funded research projects by Rao Faizan: multi-agent AI and clinical knowledge graphs for cardiovascular care, data-driven energy operations, and person re-identification.">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -32,46 +32,57 @@
   <section>
     <div class="entry">
       <div class="entry-head">
-        <h3>Lightweight Language Model for Healthcare</h3>
+        <h3>Explainable Logical Reasoning for Medical Knowledge Generation</h3>
         <span class="entry-date">2024 – Present</span>
       </div>
-      <p class="entry-org">Kyung Hee University · Korean government-funded</p>
+      <p class="entry-org">Kyung Hee University · IITP, Korean Ministry of Science and ICT ·
+        project IITP-2022-0-00078</p>
       <ul>
-        <li><strong>Problem.</strong> Clinical language models capable enough to support diagnosis are
-            too large to deploy affordably, and their outputs cannot be taken on trust in a medical
-            setting.</li>
-        <li><strong>Approach.</strong> A neuro-symbolic small language model covering health literacy,
-            disease detection, treatment recommendation and medical report generation — paired with a
-            proof reasoner that verifies generated claims against a symbolic knowledge base.</li>
-        <li><strong>My role.</strong> Owner of the model-efficiency workstream (quantization, knowledge
-            distillation, structured pruning) and the vision–language pipeline over the MIMIC chest
-            X-ray corpus.</li>
+        <li><strong>Problem.</strong> A language model capable enough to support cardiovascular
+            diagnosis is too large to deploy affordably, and its output cannot be taken on trust
+            anywhere near a patient.</li>
+        <li><strong>Approach.</strong> A multi-agent system whose reasoning is grounded in knowledge
+            graphs built from raw clinical data — the KorHF-III heart-failure registry (7,351 patients,
+            47 centres) as 7,439 nodes and 114,505 edges, plus a clinician-curated chest-pain knowledge
+            base — served through HybridRAG over a graph database behind an MCP tool interface, with a
+            proof reasoner verifying claims against a symbolic knowledge base.</li>
+        <li><strong>My role.</strong> Lead the multi-agent workstream. Own knowledge-graph
+            construction, the context-management / safety / alignment layer, the model-efficiency work
+            (quantization, distillation, pruning, including BANQ), and the vision–language pipeline
+            over MIMIC-CXR.</li>
+        <li><strong>Outcome.</strong> The registry analysis was accepted as an abstract at
+            <a href="publications.html">ESC Congress 2026</a>, with cardiology departments at five
+            Korean university hospitals.</li>
       </ul>
       <div class="tags">
-        <span class="tag">PyTorch</span><span class="tag">Hugging Face</span>
-        <span class="tag">Quantization</span><span class="tag">Distillation</span>
-        <span class="tag">Pruning</span><span class="tag">Vision–Language</span>
-        <span class="tag">MIMIC</span>
+        <span class="tag">Multi-agent</span><span class="tag">Knowledge graphs</span>
+        <span class="tag">HybridRAG</span><span class="tag">MCP</span>
+        <span class="tag">Safety &amp; alignment</span><span class="tag">Quantization</span>
+        <span class="tag">PyTorch</span><span class="tag">MIMIC</span>
       </div>
     </div>
 
     <div class="entry">
       <div class="entry-head">
-        <h3>AI-Based Energy Management Solution — Japan Market</h3>
+        <h3>Hybrid AI-Based Multi-Agent System for Data-Driven Energy Operations</h3>
         <span class="entry-date">2024 – Present</span>
       </div>
-      <p class="entry-org">Kyung Hee University · Industry-funded</p>
+      <p class="entry-org">Kyung Hee University · MSIT ITRC programme — DESIRe Center
+        (Data-driven Energy System Innovation Research Center)</p>
       <ul>
-        <li><strong>Problem.</strong> Grid operators need household and facility demand to flex in
-            response to supply conditions and price signals, without users having to think about it.</li>
-        <li><strong>Approach.</strong> A platform spanning grid automation, automated demand response,
-            distributed energy resource integration, balance group formation and flexible pricing.</li>
-        <li><strong>My role.</strong> Built the Self Demand Response (SDR) component — dataset
-            unification across heterogeneous consumption sources, LSTM forecasting models driving the
-            SDR policy, and the battery-storage scheduling algorithm.</li>
+        <li><strong>Problem.</strong> Energy operators hold grid, building-load and market data in
+            incompatible formats, and need demand to flex against supply and price signals without
+            users having to think about it.</li>
+        <li><strong>Approach.</strong> A HybridRAG system over NREL open energy datasets so operational
+            questions can be answered across heterogeneous sources, alongside an automated demand
+            response platform.</li>
+        <li><strong>My role.</strong> Built the HybridRAG component, and the Self Demand Response (SDR)
+            component before it — dataset unification across heterogeneous consumption sources, the
+            LSTM forecasting models driving the SDR policy, and the battery-storage scheduling
+            algorithm.</li>
       </ul>
       <div class="tags">
-        <span class="tag">Python</span><span class="tag">LSTM</span>
+        <span class="tag">HybridRAG</span><span class="tag">Python</span><span class="tag">LSTM</span>
         <span class="tag">Keras</span><span class="tag">PyTorch</span>
         <span class="tag">Time-series forecasting</span><span class="tag">Scheduling</span>
       </div>
