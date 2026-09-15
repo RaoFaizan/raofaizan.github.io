@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Projects — Rao Faizan</title>
-<meta name="description" content="Funded research projects by Rao Faizan: multi-agent AI and clinical knowledge graphs for cardiovascular care, data-driven energy operations, and person re-identification.">
+<title>Projects, Rao Faizan</title>
+<meta name="description" content="Funded research projects by Rao Faizan: agent systems and clinical knowledge graphs for cardiovascular care, data driven energy operations, and person re-identification.">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -13,18 +13,18 @@
   <div class="nav-inner">
     <a class="brand" href="index.html">Rao Faizan</a>
     <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="publications.html">Publications</a>
-      <a href="projects.html" class="active">Projects</a>
-      <a href="experience.html">Experience</a>
-      <a href="assets/Rao_Faizan_CV.pdf">CV</a>
+      <a href="index.html">home</a>
+      <a href="publications.html">publications</a>
+      <a href="projects.html" class="active">projects</a>
+      <a href="experience.html">experience</a>
+      <a href="assets/Rao_Faizan_CV.pdf">cv</a>
     </nav>
   </div>
 </header>
 
 <div class="wrap page-head">
   <h1>Projects</h1>
-  <p>Funded research projects and thesis work, with the problem each one addresses and my role in it.</p>
+  <p>Three pieces of work, and what I actually did on each.</p>
 </div>
 
 <main class="wrap">
@@ -33,79 +33,66 @@
     <div class="entry">
       <div class="entry-head">
         <h3>Explainable Logical Reasoning for Medical Knowledge Generation</h3>
-        <span class="entry-date">2024 – Present</span>
+        <span class="entry-date">2024 to present</span>
       </div>
-      <p class="entry-org">Kyung Hee University · IITP, Korean Ministry of Science and ICT ·
-        project IITP-2022-0-00078</p>
-      <ul>
-        <li><strong>Problem.</strong> A language model capable enough to support cardiovascular
-            diagnosis is too large to deploy affordably, and its output cannot be taken on trust
-            anywhere near a patient.</li>
-        <li><strong>Approach.</strong> A multi-agent system whose reasoning is grounded in knowledge
-            graphs built from raw clinical data: the KorHF-III heart-failure registry (7,351 patients,
-            47 centres) as 7,439 nodes and 114,505 edges, plus a clinician-curated chest-pain knowledge
-            base. These are served through HybridRAG over a graph database behind an MCP tool
-            interface, with a proof reasoner verifying claims against a symbolic knowledge base.</li>
-        <li><strong>My role.</strong> Lead the multi-agent workstream. Own knowledge-graph
-            construction, the context-management / safety / alignment layer, the model-efficiency work
-            (quantization, distillation, pruning), and the vision–language pipeline
-            over MIMIC-CXR.</li>
-        <li><strong>Outcome.</strong> The registry analysis was presented as an abstract at the
-            <a href="publications.html">European Society of Cardiology (ESC) Congress 2026</a> in
-            Munich, with cardiology departments at five Korean university hospitals.</li>
-      </ul>
-      <div class="tags">
-        <span class="tag">Multi-agent</span><span class="tag">Knowledge graphs</span>
-        <span class="tag">HybridRAG</span><span class="tag">MCP</span>
-        <span class="tag">Safety &amp; alignment</span><span class="tag">Quantization</span>
-        <span class="tag">PyTorch</span><span class="tag">MIMIC</span>
-      </div>
+      <p class="entry-org">Kyung Hee University. Funded by IITP, Korean Ministry of Science and
+        ICT, project IITP-2022-0-00078.</p>
+
+      <p>A language model capable enough to support a cardiac diagnosis is too large to deploy
+         affordably, and its output cannot be taken on trust anywhere near a patient. This
+         project is an attempt at both halves of that.</p>
+
+      <p>The system is a set of agents, each with a narrow job, whose reasoning is anchored in
+         knowledge graphs built from real clinical data rather than from scraped text. The
+         KorHF-III heart failure registry covers 7,351 patients across 47 centres; as a graph
+         that is 7,439 nodes and 114,505 edges. A second graph comes from a chest pain knowledge
+         base curated by clinicians. Queries run through a hybrid retrieval pipeline over a graph
+         database, reachable as a tool through MCP, and a proof reasoner checks generated claims
+         against a symbolic knowledge base before they surface.</p>
+
+      <p>I lead the agent workstream. That covers building the graphs, the layer that manages
+         context and keeps claims inside their evidence, the compression work that gets models
+         onto hospital hardware, and the vision and language pipeline over MIMIC-CXR.</p>
+
+      <p>The registry analysis was presented at the
+         <a href="publications.html">European Society of Cardiology Congress 2026</a> in Munich,
+         with cardiology departments from five Korean university hospitals.</p>
     </div>
 
     <div class="entry">
       <div class="entry-head">
-        <h3>Hybrid AI-Based Multi-Agent System for Data-Driven Energy Operations</h3>
-        <span class="entry-date">2024 – Present</span>
+        <h3>Hybrid AI Multi Agent System for Data Driven Energy Operations</h3>
+        <span class="entry-date">2024 to present</span>
       </div>
-      <p class="entry-org">Kyung Hee University · MSIT ITRC programme · DESIRe Center
-        (Data-driven Energy System Innovation Research Center)</p>
-      <ul>
-        <li><strong>Problem.</strong> Energy operators hold grid, building-load and market data in
-            incompatible formats, and need demand to flex against supply and price signals without
-            users having to think about it.</li>
-        <li><strong>Approach.</strong> A HybridRAG system over NREL open energy datasets so operational
-            questions can be answered across heterogeneous sources, alongside an automated demand
-            response platform.</li>
-        <li><strong>My role.</strong> Built the HybridRAG component, and the Self Demand Response (SDR)
-            component before it: dataset unification across heterogeneous consumption sources, the
-            LSTM forecasting models driving the SDR policy, and the battery-storage scheduling
-            algorithm.</li>
-      </ul>
-      <div class="tags">
-        <span class="tag">HybridRAG</span><span class="tag">Python</span><span class="tag">LSTM</span>
-        <span class="tag">Keras</span><span class="tag">PyTorch</span>
-        <span class="tag">Time-series forecasting</span><span class="tag">Scheduling</span>
-      </div>
+      <p class="entry-org">Kyung Hee University. MSIT ITRC programme, DESIRe Center
+        (Data-driven Energy System Innovation Research Center).</p>
+
+      <p>Energy operators hold grid data, building load data and market data in formats that do
+         not talk to each other, and they need demand to flex against supply and price without
+         anyone having to think about it.</p>
+
+      <p>I built the hybrid retrieval system that sits over NREL open energy datasets, so an
+         operational question can be answered across those incompatible sources. Before that I
+         built the self demand response component: unifying consumption data from several
+         sources, training the LSTM forecasting models that drive the response policy, and
+         writing the battery storage scheduling algorithm.</p>
     </div>
 
     <div class="entry">
       <div class="entry-head">
-        <h3>IAB-Net — Informative &amp; Attention-Based Person Re-Identification</h3>
-        <span class="entry-date">2020 – 2021</span>
+        <h3>IAB-Net, person re-identification</h3>
+        <span class="entry-date">2020 to 2021</span>
       </div>
-      <p class="entry-org">M.S. thesis · Machine Vision &amp; Intelligent Systems Lab, NUST</p>
-      <ul>
-        <li><strong>Problem.</strong> Matching the same person across non-overlapping surveillance
-            cameras breaks down under viewpoint, illumination and background variation.</li>
-        <li><strong>Approach.</strong> An attention module that suppresses background clutter and
-            emphasises discriminative body regions, improving matching robustness across cameras.</li>
-        <li><strong>Outcome.</strong> Published and presented at ICoDT2 2021 (IEEE). Owned the full
-            cycle: dataset curation, model design, ablation studies and write-up.</li>
-      </ul>
-      <div class="tags">
-        <span class="tag">PyTorch</span><span class="tag">Attention</span>
-        <span class="tag">Re-identification</span><span class="tag">Computer Vision</span>
-      </div>
+      <p class="entry-org">Master's thesis. Machine Vision and Intelligent Systems Lab, NUST.</p>
+
+      <p>Matching the same person across cameras that do not overlap falls apart under changes
+         in viewpoint, lighting and background. I built an attention module that suppresses
+         background clutter and weights the parts of the body that actually distinguish people,
+         which made matching hold up better across cameras.</p>
+
+      <p>I did the whole thing end to end: curating the dataset, designing the model, running the
+         ablations, writing it up and presenting it at ICoDT2 2021. The code is
+         <a href="https://github.com/raofaizan/IAB-Net">on GitHub</a>.</p>
     </div>
   </section>
 
@@ -113,8 +100,8 @@
 
 <footer>
   <div class="wrap">
-    <span>© 2026 Rao Faizan</span>
-    <span>Kyung Hee University · Gyeonggi-do, South Korea</span>
+    <span>Rao Faizan, 2026</span>
+    <span>Kyung Hee University, Gyeonggi-do, South Korea</span>
   </div>
 </footer>
 

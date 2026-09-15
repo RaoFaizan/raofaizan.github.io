@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rao Faizan — AI Researcher</title>
-<meta name="description" content="Rao Faizan — artificial intelligence researcher at Kyung Hee University building multi-agent (agentic) AI for cardiovascular care: clinical knowledge graphs, hybrid retrieval, agent safety and alignment, and model compression for hospital deployment.">
+<title>Rao Faizan</title>
+<meta name="description" content="Rao Faizan is an AI researcher at Kyung Hee University in South Korea, working on agent systems, clinical knowledge graphs and model compression for cardiovascular care.">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -13,135 +13,91 @@
   <div class="nav-inner">
     <a class="brand" href="index.html">Rao Faizan</a>
     <nav class="nav-links">
-      <a href="index.html" class="active">Home</a>
-      <a href="publications.html">Publications</a>
-      <a href="projects.html">Projects</a>
-      <a href="experience.html">Experience</a>
-      <a href="assets/Rao_Faizan_CV.pdf">CV</a>
+      <a href="index.html" class="active">home</a>
+      <a href="publications.html">publications</a>
+      <a href="projects.html">projects</a>
+      <a href="experience.html">experience</a>
+      <a href="assets/Rao_Faizan_CV.pdf">cv</a>
     </nav>
   </div>
 </header>
 
-<div class="hero">
-  <div class="wrap hero-grid">
-    <img src="assets/profile.png" alt="Portrait of Rao Faizan">
-    <div>
-      <h1>Rao Faizan</h1>
-      <p class="role">Artificial Intelligence Researcher · Kyung Hee University, South Korea</p>
-      <p class="bio">
-        I build multi-agent (agentic) AI systems for cardiovascular care. That means constructing
-        clinical knowledge graphs straight from raw registry data, reasoning over them with hybrid
-        retrieval, and building the context-management, safety and alignment layers that decide whether
-        an agent system can be trusted near a patient. A parallel track shrinks clinical language models
-        far enough to run inference inside a hospital.
-      </p>
-      <div class="links">
-        <a class="primary" href="assets/Rao_Faizan_CV.pdf">Download CV (PDF)</a>
-        <a href="mailto:rao.faizan@khu.ac.kr">Email</a>
-        <a href="https://github.com/raofaizan">GitHub</a>
-        <a href="https://www.linkedin.com/in/rao-faizan/">LinkedIn</a>
-        <a href="https://scholar.google.com/citations?user=-F30Si8AAAAJ">Google Scholar</a>
-        <a href="https://orcid.org/0000-0003-4084-5166">ORCID</a>
-      </div>
-    </div>
-  </div>
-</div>
-
 <main class="wrap">
 
-  <section>
-    <h2>Research areas</h2>
-    <p class="section-lede">
-      Where my work sits, and the through-line connecting it: making capable models small enough,
-      grounded enough, and trustworthy enough to deploy.
+  <div class="intro">
+    <img src="assets/profile.png" alt="Rao Faizan">
+    <h1>Rao Faizan</h1>
+    <p class="role">AI Researcher, Kyung Hee University</p>
+
+    <p>I work on AI agents for heart care at Kyung Hee University, outside Seoul.</p>
+
+    <p>Two things have to be true before any of this gets near a patient. The model has to be
+       small enough to run on hardware a hospital already owns, and its answers have to be
+       traceable to something. Most of what I do sits on one side or the other of that: building
+       knowledge graphs that give a model something solid to stand on, and compressing models
+       until they fit.</p>
+
+    <p>In August I presented at the ESC Congress in Munich with cardiologists from five Korean
+       university hospitals. We had turned the Korean heart failure registry, 7,351 patients
+       across 47 centres, into a knowledge graph, then used it to ask what happens when
+       guideline directed therapy gets scaled back in the year after discharge. Mortality goes
+       up, and it stays up after you adjust for how sick the patients were to begin with.</p>
+
+    <p>Before Korea I lectured for three years in Lahore. Before that I did a master's at NUST
+       on matching people across surveillance cameras.</p>
+
+    <p class="elsewhere">
+      <a href="assets/Rao_Faizan_CV.pdf">CV (PDF)</a>
+      <a href="mailto:rao.faizan@khu.ac.kr">rao.faizan@khu.ac.kr</a>
+      <a href="https://scholar.google.com/citations?user=-F30Si8AAAAJ">Scholar</a>
+      <a href="https://orcid.org/0000-0003-4084-5166">ORCID</a>
+      <a href="https://www.linkedin.com/in/rao-faizan/">LinkedIn</a>
+      <a href="https://github.com/raofaizan">GitHub</a>
     </p>
-    <div class="cards">
-      <div class="card">
-        <h3>Agentic systems for healthcare</h3>
-        <p>Multi-agent systems for cardiovascular diagnosis and patient health literacy: task
-           decomposition, tool and MCP interfaces, and coordination between reasoning and retrieval
-           agents.</p>
-      </div>
-      <div class="card">
-        <h3>Clinical knowledge graphs</h3>
-        <p>Building knowledge graphs directly from raw registry data, then querying them with
-           HybridRAG. The KorHF-III heart-failure registry became a 7,439-node, 114,505-edge
-           graph.</p>
-      </div>
-      <div class="card">
-        <h3>Context, safety and alignment</h3>
-        <p>Inter-agent context management, scope limits on clinical claims, and a proof reasoner that
-           verifies generated statements against a symbolic knowledge base before a user sees them.</p>
-      </div>
-      <div class="card">
-        <h3>Shrinking models for deployment</h3>
-        <p>Quantization, knowledge distillation and structured pruning so clinical models fit
-           hospital-side inference hardware without losing diagnostic accuracy.</p>
-      </div>
-      <div class="card">
-        <h3>Vision–language modeling</h3>
-        <p>Clinical question answering and automated report generation over chest X-ray corpora
-           such as MIMIC.</p>
-      </div>
-      <div class="card">
-        <h3>Intelligent energy systems</h3>
-        <p>HybridRAG over open energy datasets, plus LSTM demand forecasting and battery-storage
-           scheduling for self demand response.</p>
-      </div>
-    </div>
-  </section>
+  </div>
 
   <section>
-    <h2>At a glance</h2>
-    <div class="stats">
-      <div class="stat"><span class="num">4.25<span style="font-size:1rem">/4.30</span></span>
-        <span class="lbl">Ph.D. CGPA — 99.33 percentile</span></div>
-      <div class="stat"><span class="num">Presidential</span>
-        <span class="lbl">Scholarship, Kyung Hee University</span></div>
-      <div class="stat"><span class="num">7</span>
-        <span class="lbl">Peer-reviewed papers — 2 in press</span></div>
-      <div class="stat"><span class="num">ESC 2026</span>
-        <span class="lbl">Abstract presented, European Society of Cardiology Congress, Munich</span></div>
-    </div>
-  </section>
+    <h2>What I am working on</h2>
 
-  <section>
-    <h2>Currently</h2>
-    <ul class="plain">
-      <li><strong>Multi-agent cardiovascular diagnostics.</strong> Leading the agent workstream of
-          <em>Explainable Logical Reasoning for Medical Knowledge Generation</em>, funded by IITP under
-          the Korean Ministry of Science and ICT.</li>
-      <li><strong>Knowledge graphs from raw clinical data.</strong> KorHF-III heart-failure registry
-          and a clinician-curated chest-pain knowledge base, served through HybridRAG over a graph
-          database with an MCP tool interface.</li>
-      <li><strong>Context management, safety and alignment.</strong> The layer that keeps a multi-agent
-          clinical system inside its evidence. This is the part that decides whether any of it is
-          deployable.</li>
-      <li><strong>Shrinking models for hospital inference.</strong> Quantization, knowledge
-          distillation and structured pruning, so one checkpoint can serve several memory
-          budgets.</li>
-      <li><strong>Data-driven energy operations.</strong> HybridRAG over NREL open energy datasets and
-          the Self Demand Response component, under the MSIT ITRC programme (DESIRe Center).</li>
-    </ul>
+    <h3>Agents that can show their reasoning</h3>
+    <p>A multi agent system for cardiovascular diagnosis, risk explanation and patient health
+       literacy, funded by IITP under the Korean Ministry of Science and ICT. My part is the
+       coordination layer. What does one agent hand to the next, where does a clinical claim
+       stop being supportable, and how does a generated sentence get checked against a symbolic
+       knowledge base before anyone reads it.</p>
+
+    <h3>Knowledge graphs out of raw clinical data</h3>
+    <p>Registries arrive as spreadsheets, not as graphs, so the first job is building the graph.
+       KorHF-III came out at 7,439 nodes and 114,505 edges across eight entity types, with 131
+       clinical properties per patient. A clinician curated chest pain knowledge base became a
+       second one. Both are queried through a hybrid pipeline that mixes graph traversal with
+       dense and sparse retrieval.</p>
+
+    <h3>Making the models small enough to deploy</h3>
+    <p>Quantization, knowledge distillation and structured pruning. The goal is unglamorous and
+       specific: one checkpoint that can be served at several memory budgets, so a hospital is
+       not storing a separate model for every machine it wants to run on.</p>
+
+    <h3>Energy systems, on the side</h3>
+    <p>Under the ITRC programme at the DESIRe centre I built a hybrid retrieval system over NREL
+       open energy data. Before that, the self demand response component: forecasting household
+       and facility load with LSTMs, then scheduling battery storage against price signals.</p>
   </section>
 
   <section>
     <h2>Get in touch</h2>
-    <p class="section-lede">
-      Open to research scientist and machine learning engineer roles in applied LLM and multimodal
-      systems, and to research collaboration.
-    </p>
-    <div class="links">
-      <a class="primary" href="mailto:rao.faizan@khu.ac.kr">rao.faizan@khu.ac.kr</a>
-    </div>
+    <p>I am looking for research scientist and machine learning engineer roles in applied
+       language models and multimodal systems, and I am always glad to hear from people working
+       on similar problems. The fastest way to reach me is
+       <a href="mailto:rao.faizan@khu.ac.kr">rao.faizan@khu.ac.kr</a>.</p>
   </section>
 
 </main>
 
 <footer>
   <div class="wrap">
-    <span>© 2026 Rao Faizan</span>
-    <span>Kyung Hee University · Gyeonggi-do, South Korea</span>
+    <span>Rao Faizan, 2026</span>
+    <span>Kyung Hee University, Gyeonggi-do, South Korea</span>
   </div>
 </footer>
 
